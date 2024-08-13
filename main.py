@@ -33,11 +33,24 @@ def find_combination(a, number):
     
     return None
 
-a = [1728, 288, 144, 72, 12, 10, 6]
+"""--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+YO PLEASE READ THIS LOL
+
+to get proper results you have to change the beads list to be whats actually in the game. for example if you wanted to solve the first one you
+would change the list to be [1728,144,72,12,6]. ok good luck
+
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+"""
+
+
+
+beads = [52115389,1728, 288, 144, 72, 12, 10, 6]
 number = int(input("input number: "))
 
-if can_sum(a, number):
-    result = find_combination(a, number)
+if number > 52115389:
+    print("yo if ur tryna do the funny gears puzzle and not something else its just [1, 0, 0, 0, 0, 0, 1, 0] the solver takes a god awful time to solve anything larger then 52115389 cause i cant code")
+if can_sum(beads, number):
+    result = find_combination(beads, number)
     print("found:", result)
 else:
     print("oh god (no solve)")
